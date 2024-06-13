@@ -1,0 +1,17 @@
+
+
+type CombinationsResult{
+    combinations: Int!
+    id: ID!
+
+}
+
+type Mutation{
+    verify(
+    score: String!
+    ): CombinationsResult
+}
+
+type Query {
+  scoreboardById(id: ID!): CombinationsResult
+}
