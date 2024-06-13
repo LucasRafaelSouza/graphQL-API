@@ -2,8 +2,6 @@ package graphQlApi.Services;
 
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.Map;
 
 @Service
 public class ScoreService implements  ScoreServiceInterface{
@@ -16,16 +14,10 @@ public class ScoreService implements  ScoreServiceInterface{
         int firstScore = Integer.parseInt(scores[0]);
         int secondScore = Integer.parseInt(scores[1]);
 
-        System.out.println("------------Testando SEPARACAO dos placares-------------");
-        System.out.println(firstScore);
-        System.out.println(secondScore);
 
         int firstCombination = countCombinations(firstScore,0);
         int secondCombination = countCombinations(secondScore,0);
 
-        System.out.println("------------Testando COMBINACAO dos placares-------------");
-        System.out.println(firstCombination);
-        System.out.println(secondCombination);
 
         return firstCombination * secondCombination;
     }
@@ -46,7 +38,6 @@ public class ScoreService implements  ScoreServiceInterface{
         for (int i = start; i < possiblePoints.length; i++){
             combinations += countCombinations(score-possiblePoints[i],i);
         }
-
 
 
 
