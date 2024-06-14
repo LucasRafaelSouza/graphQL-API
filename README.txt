@@ -3,6 +3,8 @@ Esta rota também possui uma interface amigável para auxiliar nos testes.
 
 Instruções para rodar a aplicação:
 
+    cd graphQL-API (caso não esteja no diretório raiz do projeto)
+
     docker-compose build
 
     docker-compose up
