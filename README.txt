@@ -20,8 +20,8 @@ do projeto, caso o Maven esteja instalado na sua máquina (também é possivel r
 LÓGICA DE IMPLEMENTAÇÃO:
 
     O funcionamento da aplicação está divido em três camadas (diretórios) principais: Controllers, Services e Models. Dentro de models, a classe
-CombinationsResult, que possui a propriedade combinations, representando o número de combinações possíveis,  está sendo definida. Dentro de Services.
-Temos a camada que irá lidar com a implementação do algoritmo que irá determinar o número de combinações. Nela, temos a ScoreServiceInterface, que define
+CombinationsResult, que possui a propriedade combinations, representando o número de combinações possíveis,  está sendo definida. Dentro de Services,
+temos a camada que irá lidar com a implementação do algoritmo que irá determinar o número de combinações. Nela, temos a ScoreServiceInterface, que define
 os métodos que devem ser implementados pelas classes que derivam da interface, e na classe ScoreService, temos a implementação destes métodos. Na classe ScoreService,
 o método CountCombinations é o principal responsável pela lógica do algoritmo. Em resumo, ele usa uma abordagem recursiva para percorrer todas as possíves pontuações
 que um time pode ter, para isso, ele usa o array de PossiblePoints, onde 3 representa os pontos de um field goal, 6 representa um Touchdown, 7 um Touchdown com um Extra
